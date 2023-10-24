@@ -1,0 +1,10 @@
+<div class="timer-input">
+  <mat-form-field>
+    <input matInput placeholder="Enter time (in seconds)" [(ngModel)]="timeInSeconds">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="startTimer()">Submit</button>
+</div>  
+  <div class="countdown" *ngIf="countdown !== undefined">
+    Countdown: {{ countdown }} seconds
+  </div>
+  
